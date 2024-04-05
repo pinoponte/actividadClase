@@ -38,7 +38,6 @@ echo "# actividadClase" >> README.md
 git init 
 git add README.md 
 git commit -m "primer compromiso" 
-git rama -M principal 
-git remoto agregar origen https://github.com/pinoponte/actividadClase.git
- git push - u origen principal
- 
+git blame -M principal 
+git remote add origen https://github.com/pinoponte/actividadClase.git
+ git push - u origin main
