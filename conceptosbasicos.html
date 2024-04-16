@@ -3,65 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conceptos Basicos js </title>
+    <title>Conceptos básicos js</title>
     
-    <script src="scripts/conceptosbasicos.js" defer> </script>
-       <script src="/scripts/practicaConceptos.js" defer type="text/javaScript"></script>  </script>
-
+    <!-- archivo de js de la clase pasada -->
+    <script src="scripts/conceptosBasicos.js" defer></script>
+    <!-- archivo de js de la clase de hoy 10/04/2024 -->
+    <!-- type="text/JavaScript" -> RECOMENDADO USAR -->
+    <script src="scripts/practicaConceptos.js" defer type="text/JavaScript"></script>
+    
 </head>
-<body>
+<body> 
+
 
     <header>
-        <h1>Conceptos Básicos</h1>
+        <h1>Conceptos básicos</h1>
         <h2>De JavaScript</h2>
     </header>
+
     <main>
-<p> implementar los conceptos de sitios web dinamicos con JavaScript</p>
-<ol>
-    <li>manejo del DOM
-    </li>
-    <li>condicionales
 
-    </li>
-    <li>
-        ciclos
+        <p>Implementar los conceptos de sitios web dinámicos con javaScript:</p>
 
-    </li>
+        <ol>
+            <li> MANEJO DEL DOM</li>
+            <li> CONDICIONALES</li>
+            <li> CICLOS</li>
+        </ol>
 
-    <section>
-        <!-- seccion para el primer ejercicio, ejercicio de DOM y condicionales -->
-        <h3>ejercicio de Dom y condicionales</h3>
-        <!--que es lo que yo quiero con este eejercicio-->
-        <p>preguntar al usuario su edad y mostar en pantalla si es mayor o menor de edad</p>
-        <div>
-            <!--imput hace referencia a entada que es algo que me suminista el usuario-->
-          
-          <!--label es una etiqueta para input -->  <label>Cuál es suedad</label> 
-        <input type="number" id="edadInput" placeholder="Ingrese a quí su edad">
-<!--para darle funcionalidad a este boton debo llamar un EVENTO onClick que significa darle click al boton-->
-<!--evento es una accion del usuario-->
-        <button onclick="vericarEdad()">Verificar</button>
-        <!--el id es un identificador unio que nos permite llevar un elemento de html a nuesto jsr-->
-        <p id="mensaje"></p>
-        
 
-        </div>
-    </section>
-</ol>
+        <!-- sección para el primer ejercicio -> Ejercicio de DOM Y CONDICIONALES -->
+        <section>
+            <h3>Ejercicio de DOM y Condicionales</h3>
+            <!-- Qué es lo que quiero hacer con este ejercicio -->
+            <p> Preguntar al usuario su edad y mostrar en pantalla si es mayor o menor de edad</p>
+
+            <div class="contenedor">
+                <!-- input -> entrada -> que es algo que me suministra el usuario ej: número, un nombre, correo, una contraseña, etc -->
+                <!-- label -> es una etiqueta para el input -->
+                <label>¿Cuál es tu edad?</label> 
+                <input type="number" id="edadInput" placeholder="Ingrese aquí su edad">
+
+                <!-- para darle duncionalidad a ese botón, debo llamar un EVENTO onclick -> darle click al botón -->
+                <!-- EVENTO ES UNA ACCIÓN DEL USUARIO -->
+                <button id="boton" onclick="verificarEdad()">Verificar edad</button>
+
+                <!-- el id -> es un IDENTIFICADOR ÚNICO -> que podamos llevar un elemento de html a nuestro JS -->
+                <br><br>
+                <span id="mensajeEdad">Soy el mensaje que te dirá si eres mayor de edad</span>
+
+            </div>
+
+
+        </section>
+
     </main>
+
     <footer>
-        <p>todos los derechos reservados Andrés Castañeda</p>
+        <p>Todos los derechos reservados -> creado por Luisa Castaño</p>
     </footer>
-    
 
 
-    <!-- nos sirve para vincular nuesto arcchivo de js en nuesto html
-        se coloca antes del cierre de body 
+    <!-- La etiqueta SCRIPT -> nos sirve para vincular nuestro archivo de JS en nuestro html
+        1. inmediatamente antes del cierre de body
+        2. utilizar el script en la etiqueta HEAD
     -->
-
-
-    
-
+    <!-- <script src="/conceptosBasicos.js"></script> -->
 </body>
 </html>
 
